@@ -98,7 +98,7 @@ ul{
 }
 
 .service{
-        margin-bottom: 150px;
+        margin-bottom: 150px; /*Расстояние вниз до след контента*/
     
 }
 
@@ -111,8 +111,20 @@ ul{
     margin-right: 90px; /*Размер отступа до контента справа*/
 }
 
+.service__box{
+    margin-bottom: 50px; /*Расстояние вниз до след контента*/
+}
+.service__box-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px; /*Расстояние вниз до след контента*/
+}
 
-
+.service__img{
+    object-fit: cover; /*Чтобы картинку не развозило дофига вниз и вверх при добавлении контента слева*/
+    
+}
 
 
 
