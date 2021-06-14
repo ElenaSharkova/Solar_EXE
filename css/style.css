@@ -1,4 +1,48 @@
+*,
+*::after;
+*before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Noto Sans; /*Подключить шрифт на весь текст внутри body*/
+    font-size: 14px; /*Толщина текста на весь body*/
+    line-height: 19px; /*Высота строки на весь body*/
+    font-weight: 400; /*Ширина текста на весь body*/
+}
+a{
+    color: inherit; /*БРАТЬ ЗНАЧЕНИЕ у родителя и не выебываться своим по умолчанию*/
+    text-decoration: none; /*Отменить подчеркиваемость ссылки*/
+}
+
 .header{
     background-image: url(../images/fon.jpg); /*задний фон*/
     height: 100vh; /*100% высоты экрана устройства, на котором просматривается сайт*/
+    background-repeat: no-repeat; /*Чтобы картинка не повторялась, если вдруг экран большой*/
+    background-size: cover; /*для растягивания картинки по размеру конкретного экрана*/
+    background position: center; /*Отцентрировать картинку*/
+    color: #fff; /*Все элелменты внутри header белые*/
+    text-align: center; /*Отцентрировать текст всего хэдера*/
+    display: flex; /*Все элементы поставить друг за другом*/
+    flex-direction: column; /*Ось расположения элементов друг за другом сделать из горизонтальной вертикальной*/
+    justify-content: space-between; /*Раскидать элементы равномерно по ширине, но у нас раскидываются по высоте, т.к. оси поменяны местами*/
+    padding: 70px 10px 38px; /*70 сверху, 10 по бокам, 38 снизу*/    
+}
+
+.header__subtitle{
+    font-size: 18px; /*Толщина текста на весь header__subtitle*/
+    line-height: 25px; /*Высота строки на весь header__subtitle*/
+    font-weight: 400; /*Ширина текста на весь header__subtitle, не сработало из body, т.к. этот класс зашит в h6, а он по-умолчанию жирный*/
+}
+
+.header__title{
+    font-size: 64px; /*Толщина текста на весь header__title*/
+    line-height: 87px; /*Высота строки на весь header__title*/
+    font-weight: 700; /*Ширина текста на весь header__title*/
+}
+
+.header__title span{
+    display: block; /*Перенести на другую строку*/
+    font-size: 42px; /*Толщина текста на весь header__title span*/
+    line-height: 57px; /*Высота строки на весь header__title span*/
 }
