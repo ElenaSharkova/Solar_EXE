@@ -46,3 +46,29 @@ a{
     font-size: 42px; /*Толщина текста на весь header__title span*/
     line-height: 57px; /*Высота строки на весь header__title span*/
 }
+
+.button__path{
+    transition: fill .5s; /*Замедление при закрашивании. Будет работать только если в html был задан fill, иначе он не определен и относительно чего замедлять вообще не ясно компу*/
+}
+
+.button:hover .button__path{
+    fill: #A9A32A; /*Задали цвет*/
+}
+
+.button__text{
+    font-size: 18px;
+    line-height: 25px;
+    display: inline-block; /*С этим спаном можно теперь работать как с блочным элементом*/
+    transform: translate(-60px, -17px); /*Принудительный сдвиг текста влево-право*/
+}
+
+
+
+
+
+
+
+
+
+
+
