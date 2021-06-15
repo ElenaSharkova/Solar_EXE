@@ -9,6 +9,7 @@ body{
     font-size: 14px; /*Толщина текста на весь body*/
     line-height: 19px; /*Высота строки на весь body*/
     font-weight: 400; /*Ширина текста на весь body*/
+    color: #303030; /*Цвет текста на весь body*/
 }
 a{
     color: inherit; /*БРАТЬ ЗНАЧЕНИЕ у родителя и не выебываться своим по умолчанию*/
@@ -127,6 +128,62 @@ ul{
     object-fit: cover; /*Чтобы картинку не развозило дофига вниз и вверх при добавлении контента слева*/
     
 }
+
+.info{
+    margin-bottom: 150px; /*Отступ до следующего раздела вниз 150px*/
+    
+}
+
+.info__inner{
+    display: flex; /*Поделили контейнер на 2 части*/
+    
+}
+
+.info__box{
+    flex-basis: 510px; /*Размер окна в котором написан контент*/
+    margin-right: 90px; /*Размер отступа до контента справа*/
+}
+
+.info__content{
+    flex-basis: 600px; /*Размер окна в котором написан контент*/
+}
+
+.info__content-text{
+    font-size: 18px; /*Толщина текста на весь header__title*/
+    line-height: 25px; /*Высота строки на весь header__title*/
+    font-weight: 700; /*Ширина текста на весь header__title*/
+    margin-bottom: 23px;  /*Расстояние вниз до след контента*/
+}
+
+.info-tabs{
+    margin-bottom: 100px; /*Расстояние вниз до след контента*/
+}
+.info-tabs__items{
+    margin-bottom: 120px; /*Расстояние вниз до след контента*/
+}
+
+.info-tabs__item--active{
+    /*text-decoration: underline; НЕ можем его использовать, т.к. нам нужно задать линию конкретной шириной и длинной, и отступом*/
+    padding-bottom: 5px; /*Отступ линии от текста вниз на 5px*/
+    border-bottom: 1px solid #303030; /*Толщина линии, линия сплошная, цвет линии*/
+        
+}
+
+.info-tabs__content{
+    display: none; /*Скрыть конктент*/
+}
+
+.info-tabs__content--active{
+    display: block;
+}
+
+
+
+
+
+
+
+
 
 
 
