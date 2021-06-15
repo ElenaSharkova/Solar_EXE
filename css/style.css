@@ -162,6 +162,12 @@ ul{
     margin-bottom: 120px; /*Расстояние вниз до след контента*/
 }
 
+.info-tabs__item{
+    font-size: 18px;
+    line-height: 25px;
+    margin-right: 40px;
+}
+
 .info-tabs__item--active{
     /*text-decoration: underline; НЕ можем его использовать, т.к. нам нужно задать линию конкретной шириной и длинной, и отступом*/
     padding-bottom: 5px; /*Отступ линии от текста вниз на 5px*/
@@ -177,7 +183,31 @@ ul{
     display: block; /*Отменить скрытие контента*/
 }
 
+.info-slider{
+    max-width: 510px;
+}
 
+.info-slider__img{
+    margin-right: 40px; /*Отступили справа 40px от текста в след. p*/
+    float: left; /*Выровнили максимально налево, чтобы текст обтекал картинку справо*/
+}
+
+.info-slider__text{
+    padding-bottom: 15px; /*Отступ линии от текста вниз на 15px, чтобы он не залез на стрелку, котораяи ниже*/
+    
+}
+
+.slick-arrow{
+    position: absolute; /*абсолютная позиция*/
+    left: 275px;
+    bottom: -3px;
+    z-index: 5; /*чтобы хорошо работала левая кнопка, ее нужно сделать наверх*/
+    cursor: pointer; /*чтобы все было плавненько*/
+}
+
+.slick-right{
+    left: 340px;  /*отодвинуть от левого края контейнера правый элемент*/
+}
 
 
 
