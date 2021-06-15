@@ -227,11 +227,43 @@ ul{
     font-weight: 700; /*Ширина текста на весь header__title*/
 }
 
+.blockquote{
+    padding: 128px 10px 144px;
+    background-image: url(../images/Picture_quote.jpg);
+    text-align: center;
+    background-repeat: no-repeat; /*Чтобы картинка не повторялась, если вдруг экран большой*/
+    background-size: cover; /*для растягивания картинки по размеру конкретного экрана*/
+    background position: center; /*Отцентрировать картинку*/
+    color: #fff; /*Все элелменты внутри header белые*/
+    margin-bottom: 150px; /*Отступ до следующего раздела вниз 150px*/
+}
 
+.blockquote__text{
+    max-width: 670px; /*Максимальная ширина*/
+    margin: 0 auto;/*Чтобы был по центру*/
+    font-size: 42px; /*Толщина текста на весь header__title*/
+    line-height: 57px; /*Высота строки на весь header__title*/
+    color: #fff; /*Текст максимально белый*/
+    
+}
 
+.clients{
+    margin-bottom: 150px;
+}
 
+.clients-slider__box{
+    display: flex;
+}
 
+.clients-slider__box-img{
+    flex-basis: 510px; /*Задали размер элемента по основной горизонтальной оси*/
+    margin-right: 90px;
+    
+}
 
+.clients-slider__box-title{
+    
+}
 
 
 
