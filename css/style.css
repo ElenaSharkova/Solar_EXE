@@ -258,12 +258,93 @@ ul{
 .clients-slider__box-img{
     flex-basis: 510px; /*Задали размер элемента по основной горизонтальной оси*/
     margin-right: 90px;
+    margin-bottom: 30px;
     
 }
 
 .clients-slider__box-title{
+   max-width: 478px; 
+   font-size: 18px;
+   line-height: 25px;
+   font-weight: 700;
+   margin-bottom: 30px;
+}
+
+.clients-slider__box-list{
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.clients-slider__box-item{
+    margin-bottom: 15px;
+}
+
+.slick-arrow:hover path{
+    fill: #A9A32A; /*задали цвет при наведении на срелочку*/
+}
+
+.slick-arrow path{
+    transition: .5s; /*для плавности при наведении на стрелочку*/
+}
+.step{
+    margin-bottom: 150px;
     
 }
+
+.step__inner{
+    display: flex;
+}
+
+.step__img{
+    flex-basis: 600px; /*фиксированный размер картинки с макета*/
+    object-fit: cover; /*Чтобы картинку не развозило дофига вниз и вверх при добавлении контента слева*/
+}
+
+.step__content{
+    margin-right: 90px; /*отступ справа 90px от картинки*/
+}
+
+.step__list{
+    list-style: none; /*убрали стили по умолчанию у номерованного списка*/
+    counter-reset: number; /*очистили нумерацию и задали новую совместно с .step__list-item{
+    counter-increment: number;*/
+}
+
+.step__list-item{
+    counter-increment: number;/*очистили нумерацию и задали новую совместно с .step__list-item{
+                               counter-reset: number;*/
+    margin-bottom: 30px;
+}
+
+.step__list-item::before{
+    content: '0' counter(number);
+    margin-bottom: 11px;
+    color: #868585;
+}
+
+.step__list-item:nth-child(n+10)::before{
+     content: counter(number);
+}
+
+.step__list-title{
+    margin-bottom: 2px;
+    max-width: 478px; 
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
