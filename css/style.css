@@ -209,7 +209,23 @@ ul{
     left: 340px;  /*отодвинуть от левого края контейнера правый элемент*/
 }
 
+.info__list{
+    display: flex; /*Разделили контейнер напополам*/
+    flex-wrap: wrap; /*чтобы переносились, когда места будет мало*/
+    justify-content: space-between; /*раскидать по разные стороны горизонта*/
+}
 
+.info__list-item{
+    flex-basis: 235px; /*Задали размер элемента по основной горизонтальной оси*/
+    margin-bottom: 17px;
+}
+
+.info__list-title{
+    margin-bottom: 5px;
+    font-size: 18px; /*Толщина текста на весь header__title*/
+    line-height: 25px; /*Высота строки на весь header__title*/
+    font-weight: 700; /*Ширина текста на весь header__title*/
+}
 
 
 
