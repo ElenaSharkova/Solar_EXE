@@ -174,7 +174,7 @@ ul{
 }
 
 .info-tabs__content--active{
-    display: block;
+    display: block; /*Отменить скрытие контента*/
 }
 
 
