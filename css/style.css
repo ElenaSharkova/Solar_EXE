@@ -101,7 +101,7 @@ ul{
 }
 
 .service{
-        margin-bottom: 150px; /*Расстояние вниз до след контента*/
+    margin-bottom: 150px; /*Расстояние вниз до след контента*/
     
 }
 
@@ -334,8 +334,78 @@ ul{
     font-weight: 700;
 }
 
+.footer{
+    background-image: url(../images/Footer.jpg);
+    background-repeat: no-repeat;/*Чтобы картинка не повторялась, если вдруг экран большой*/
+    background-size: cover; /*для растягивания картинки по размеру конкретного экрана*/
+    background position: center; /*Отцентрировать картинку*/
+    color: #fff; /*Все элелменты внутри footer белые*/
+    padding: 70px 0 50px; /*70 сверху, 0 по бокам, 50 снизу*/ 
+}
+.footer__top{
+    display: flex;
+    margin-bottom: 150px;  
+}
 
+.footer__form{
+    flex-basis: 510px;/*фиксированная ширина 510px */
+    margin-right: 90px;/*отступ справа от след компонента 90px*/
+}
+.footer__title{
+   font-size: 24px;
+   line-height: 43px;
+   font-weight: 700;
+   text-transform: uppercase; /*чтобы все пропечаталось сразу с большой буквы*/
+   margin-bottom: 60px;
+}
 
+.footer__input{
+    border: none; /*убрали рамку*/
+    border-bottom: 1px solid #fff; /*подчеркивание снизу 1px толщиной, сплошная, белого цвета*/
+    display: block; /*перенести формы на разные строчки*/
+    width: 100%; /*ширина формы 100%*/
+    background-color: transparent; /*задний фон формы прозрачный*/
+    padding-bottom: 11px; /*отступ вниз 11px*/
+    font-family: Noto Sans; /*Подключить шрифт на весь текст внутри footer__input*/
+    font-size: 14px; /*Толщина текста на весь footer__input*/
+    line-height: 19px; /*Высота строки на весь footer__input*/
+    font-weight: 400; /*Ширина текста на весь footer__input*/
+    color: #fff; /*Цвет текста на весь footer__input*/
+    margin-bottom: 60px;
+}
+
+.footer__input::placeholder{
+    font-family: Noto Sans; /*Подключить шрифт на весь текст внутри footer__input*/
+    font-size: 14px; /*Толщина текста на весь footer__input*/
+    line-height: 19px; /*Высота строки на весь footer__input*/
+    font-weight: 400; /*Ширина текста на весь footer__input*/
+    color: #fff; /*Цвет текста на весь footer__input*/
+    border: none;/*убрали рамку*/
+}
+
+.footer__form-btn{
+    background-color: transparent; /*задний фон формы прозрачный*/
+    border: none;/*убрали рамку*/
+    padding: 0;/*отсутствие отступов*/
+    color: #fff;
+}
+
+.footer__contacts-item{
+    font-size: 18px; /*Толщина текста на весь footer__input*/
+    line-height: 25px; /*Высота строки на весь footer__input*/
+    font-weight: 400; /*Ширина текста на весь footer__input*/
+    margin-bottom: 35px;
+}
+
+.footer__bottom{
+    display: flex;
+     justify-content: space-between; /*раскидать по разные стороны горизонта*/
+     align-items: center; /*Раскидать элементы равномерно в центр*/
+}
+
+.footer .social{
+    margin-right: -10px;
+} 
 
 
 
