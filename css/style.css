@@ -39,7 +39,7 @@ ul{
     height: 100vh; /*100% высоты экрана устройства, на котором просматривается сайт*/
     background-repeat: no-repeat; /*Чтобы картинка не повторялась, если вдруг экран большой*/
     background-size: cover; /*для растягивания картинки по размеру конкретного экрана*/
-    background position: center; /*Отцентрировать картинку*/
+    background-position: center; /*Отцентрировать картинку*/
     color: #fff; /*Все элелменты внутри header белые*/
     text-align: center; /*Отцентрировать текст всего хэдера*/
     display: flex; /*Все элементы поставить друг за другом*/
@@ -398,7 +398,7 @@ ul{
 }
 
 .footer__bottom{
-    display: flex;
+     display: flex;
      justify-content: space-between; /*раскидать по разные стороны горизонта*/
      align-items: center; /*Раскидать элементы равномерно в центр*/
 }
@@ -407,9 +407,124 @@ ul{
     margin-right: -10px;
 } 
 
+@media (max-width: 1200px){
+    .header{
+        margin-bottom: 50px;
+    }
+    .info__inner{
+        flex-wrap: wrap-reverse; /*можно перенести элемент в данном случае картинку на другую строку и поменять местами последовательность блоков*/  
+    }
+    .info__box{
+        
+    }
+    .info__content{
+        flex-basis: 100%/*растянуть на весь экран*/
+       
+    }
+    .info__contant-img{
+        display: none;
+    }
+    .info__box{
+        flex-basis: 100%;/*растянуть на весь экран*/
+        margin-right: 0;
+        display: flex;
+    }
+    .info__list{
+        align-self: flex-start; /*приподняли веь контент вверх, чтобы его не разфигачивала на всю высоту*/
+        margin-left: 40px; 
+    }
+    .info-tabs__items{
+        margin-bottom: 40px;
+    }
+}
 
+@media (max-width: 1024px){
+    .service__inner{
+        flex-wrap: wrap; /*можно перенести элемент в данном случае картинку на другую строку*/  
+    }
+    .service__content{
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+    .service__img{
+        width: 100%;
+        height: 400px;
+    }
+}
 
+@media (max-width: 826px){
+    .info__box{
+        flex-wrap: wrap;/*можно перенести элемент на другую строку*/
+    }
+    .info__list{
+        margin-left: 0;
+    }
+}
 
+@media (max-width: 768px){
+    .header__title{
+       font-size: 48px; /*Толщина текста на весь header__title*/
+       line-height: 56px; /*Высота строки на весь header__title*/
+    }
+    .header__title span{
+       font-size: 32px; /*Толщина текста на весь header__title*/
+       line-height: 40px; /*Высота строки на весь header__title*/
+    }
+    
+}
+@media (max-width: 640px){
+    .header,
+    .service,
+    .info,
+    .blockquote,
+    .clients,
+    .step,
+    .footer__top{
+        margin-bottom: 75px;
+    }
+}
+
+@media (max-width: 540px){
+    .header__title{
+       font-size: 32px; /*Толщина текста на весь header__title*/
+       line-height: 38px; /*Высота строки на весь header__title*/
+    }
+     .header__title span{
+       font-size: 22px; /*Толщина текста на весь header__title*/
+       line-height: 28px; /*Высота строки на весь header__title*/
+    }
+    .header__subtitle{
+       font-size: 16px; /*Толщина текста на весь header__subtitle*/
+       line-height: 22px; /*Высота строки на весь header__subtitle*/
+    }
+    .info-slider{
+        max-width: 400px;
+    }
+    .info-slider__img{
+        width: 100px;
+        margin-right: 0;
+        margin-bottom: 25px;
+        float: none;
+    }
+    .slick-right{
+        left: calc(50% + 30px);/*двигаем стрелочки слайдера под адаптив, изначально расстояние между ними 60px*/
+    }
+    .slick-left{
+        left: calc(50% - 30px);/*двигаем стрелочки слайдера под адаптив,изначально расстояние между ними 60px*/
+    }
+}
+
+@media (max-width: 375px){
+    .button__text{
+       margin-left: -76px; /*Прижали к левому краю контейнера*/
+    }
+    .title{
+        margin-bottom: 40px;
+    }
+    .service__box{
+        margin-bottom: 30px;
+    }
+}
 
 
 
