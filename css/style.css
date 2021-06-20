@@ -407,7 +407,7 @@ ul{
     margin-right: -10px;
 } 
 
-@media (max-width: 1200px){
+@media (max-width: 1240px){
     .header{
         margin-bottom: 50px;
     }
@@ -450,6 +450,33 @@ ul{
         width: 100%;
         height: 400px;
     }
+    .step__inner{
+        flex-wrap: wrap;/*можно перенести элемент на другую строку*/
+    }
+    .step__content{
+        margin-right: 0;
+    }
+    .step__img{
+        object-fit: cover;/*Чтобы картинку не развозило дофига вниз и вверх при добавлении контента слева*/
+        height: 400px;
+        flex-basis: 100%;/*если не работает ширина 100%*/
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 960px){
+    .clients-slider__box{
+        display: block;/*Все элементы поставить друг за другом, за счет того, что мы их сделали блочными*/
+    }
+    .clients-slider__box-title{
+        max-width: 100%;
+    }
+    .clients-slider__box-img{
+        width: 100%;
+        object-fit: cover;/*Чтобы картинку не развозило дофига вниз и вверх при добавлении контента слева*/
+        height: 300px;
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 826px){
@@ -470,7 +497,30 @@ ul{
        font-size: 32px; /*Толщина текста на весь header__title*/
        line-height: 40px; /*Высота строки на весь header__title*/
     }
-    
+    .blockquote{
+        padding: 60px 10px 80px;
+    }
+    .blockquote__text{
+       font-size: 28px; /*Толщина текста на весь header__title*/
+       line-height: 32px; /*Высота строки на весь header__title*/
+    }
+    .footer__top{
+        flex-wrap: wrap; /*выстроили друг за другом*/
+    }
+    .footer__form{
+        flex-basis: 100%;/*если не работает ширина 100%*/
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .footer__bottom{
+        flex-wrap: wrap; /*выстроили друг за другом*/
+        justify-content: center; /*все элементы центрированы*/
+    }
+    .footer__bottom .logo{
+        width: 100%;
+        margin: 20px 0;/*сверху снизу 20px, по бокам 0*/
+        text-align: center;
+    }
 }
 @media (max-width: 640px){
     .header,
@@ -498,20 +548,36 @@ ul{
        line-height: 22px; /*Высота строки на весь header__subtitle*/
     }
     .info-slider{
-        max-width: 400px;
+        max-width: 300px;
+        margin: 0 auto;
     }
     .info-slider__img{
-        width: 100px;
+        width: 250px;
         margin-right: 0;
         margin-bottom: 25px;
         float: none;
-    }
-    .slick-right{
-        left: calc(50% + 30px);/*двигаем стрелочки слайдера под адаптив, изначально расстояние между ними 60px*/
+        height: 200px;
+        object-fit: cover;/*Чтобы картинку не развозило дофига вниз и вверх при добавлении контента слева*/
     }
     .slick-left{
-        left: calc(50% - 30px);/*двигаем стрелочки слайдера под адаптив,изначально расстояние между ними 60px*/
+        left: calc(50% - 50px);/*двигаем стрелочки слайдера под адаптив,изначально расстояние между ними 60px*/
     }
+    .slick-right{
+        left: calc(50% + 10px);/*двигаем стрелочки слайдера под адаптив, изначально расстояние между ними 60px*/
+    }
+    .info__list{
+        display: block;/*Все элементы поставить друг за другом, за счет того, что мы их сделали блочными*/
+    }
+    .info-tabs__item{
+        margin-right: 0;
+        padding: 10px;
+        display: block;/*Все элементы поставить друг за другом, за счет того, что мы их сделали блочными*/
+        text-align: center;
+    }
+    .clients-slider__box-list{
+        margin-left: 0;
+    }
+    
 }
 
 @media (max-width: 375px){
@@ -524,9 +590,17 @@ ul{
     .service__box{
         margin-bottom: 30px;
     }
+    .blockquote__text{
+       font-size: 22px; /*Толщина текста на весь header__title*/
+       line-height: 28px; /*Высота строки на весь header__title*/
+    }
+}
+@media (max-width: 340px){
+    .info-slider{
+        max-width: 280px;
 }
 
-
+    
 
 
 
