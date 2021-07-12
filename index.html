@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Solar</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -276,8 +276,16 @@
                    <h2 id="Записаться на консультацию" class="footer__title">
                        ОСТАВИТЬ ЗАЯВКУ
                    </h2>  
-                   <input class="footer__input" type="text" placeholder="Имя">
-                   <input class="footer__input" type="tel" placeholder="Телефон">
+                   
+                   
+                              <!-- Hidden Required Fields -->
+		           <input type="hidden" name="project_name" value="Solar">
+		           <input type="hidden" name="admin_email" value="lena.sharkova.97@inbox.ru">
+		           <input type="hidden" name="form_subject" value="Form">
+		           <!-- END Hidden Required Fields -->
+                   
+                   <input class="footer__input" name="Имя" type="text" placeholder="Имя">
+                   <input class="footer__input" name="Телефон" type="tel" placeholder="Телефон">
                    <button class="footer__form-btn button" >
                       <svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="button__path" d="M99.0521 50C99.0521 77.0615 77.1029 99 50.026 99C22.9492 99 1 77.0615 1 50C1 22.9385 22.9492 1 50.026 1C77.1029 1 99.0521 22.9385 99.0521 50Z" stroke="white" stroke-width="2" fill="transparent"/>
