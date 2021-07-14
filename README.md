@@ -1,1 +1,1 @@
-Ссылка на сайт: w96847od.beget.tech
+Ссылка на сайт: http://w96847od.beget.tech/
