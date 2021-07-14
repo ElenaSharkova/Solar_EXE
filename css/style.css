@@ -197,6 +197,16 @@ ul{
     
 }
 
+.info-tabs__content-2{
+    display: flex; /*Поделили контейнер на 2 части*/
+}
+
+.info-slider__text{
+    padding-left: 25px;
+}
+
+
+
 .slick-arrow{
     position: absolute; /*абсолютная позиция*/
     left: 275px;
